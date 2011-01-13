@@ -1,0 +1,6 @@
+Steps for creating with mvn 2
+
+1. mvn archetype:create -DgroupId=de.coastal.helloworld -DartifactId=helloworld -DarchetypeGroupId=org.apache.struts -DarchetypeArtifactId=struts2-archetype-starter
+2. mvn jetty:run
+
+
