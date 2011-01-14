@@ -1,0 +1,12 @@
+mvn archetype:generate \
+ -DarchetypeGroupId=net.liftweb \
+ -DarchetypeArtifactId=lift-archetype-basic_2.8.1 \
+ -DarchetypeVersion=2.2 \
+ -DarchetypeRepository=http://scala-tools.org/repo-releases \
+ -DremoteRepositories=http://scala-tools.org/repo-releases \
+ -DgroupId=de.coastal \
+ -DartifactId=helloworld \
+ -Dversion=1.0
+
+
+mvn jetty:run
