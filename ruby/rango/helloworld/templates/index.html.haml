@@ -1,0 +1,37 @@
+/ render into layout or render just content block if request is AJAX
+- extends "base.html" unless request.ajax?
+
+/ head
+- block(:title, "Welcome to Rango!")
+- block(:description, "This is just a welcome screen.")
+- block(:keywords, "example")
+
+/ body
+= block(:content) do
+  #next-steps
+    %h2 Next Steps
+    %ul
+      %li Run specs: <code>./tasks.rb spec</code>
+
+  #documentation
+    %h2 Documentation
+    %ul
+      %li
+        %a{href: "http://wiki.github.com/botanicus/rango/tutorial"} Rango Tutorial
+      %li
+        %a{href: "http://wiki.github.com/botanicus/rango"} Rango Wiki
+      %li
+        %a{href: "http://rdoc.info/projects/botanicus/rango"} Rango API
+      %li
+        %a{href: "http://github.com/botanicus/rango-examples"} Rango Examples
+
+  #links
+    %h2 Links
+    %ul
+      %li IRC: #rango at irc://irc.freenode.net
+      %li
+        %a{href: "http://github.com/botanicus/rango/issues"} Rango Issue Tracker
+      %li
+        %a{href: "https://twitter.com/RangoProject"} @RangoProject
+      %li
+        %a{href: "http://botanicus.github.com/rango"} Rango Blog

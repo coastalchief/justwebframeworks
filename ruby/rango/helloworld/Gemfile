@@ -1,0 +1,72 @@
+# encoding: utf-8
+
+# Enable downloading gems from gemcutter
+source :gemcutter
+
+# === Usage === #
+# Run bundle install for installation and bundle pack for
+# locking gem packages (not the gems themselves) into vendor.
+# You have to have bundler gem installed.
+
+# http://github.com/carlhuda/bundler
+# http://yehudakatz.com/2010/02/01/bundler-0-9-heading-toward-1-0
+
+# === Shared Gems === #
+# Specify a dependency on rango. When the bundler downloads gems,
+# it will download rango as well as all of rango' dependencies
+
+# rango stack
+gem "rango"#, git: "git://github.com/botanicus/rango.git"
+gem "rack"#, git: "git://github.com/rack/rack.git"
+
+gem "nake"#, git: "git://github.com/botanicus/nake.git"
+gem "git-deployer"#, git: "git://github.com/botanicus/git-deployer.git"
+
+# rack middlewares
+gem "multigiri"#, git: "git://github.com/botanicus/multigiri.git"
+
+# router
+gem "usher"#, git: "git://github.com/joshbuddy/usher.git"
+
+gem "template-inheritance"#, git: "git://github.com/botanicus/template-inheritance.git"
+gem "helpers"#, git: "git://github.com/botanicus/helpers.git"
+gem "formidable"#, git: "git://github.com/botanicus/formidable.git"
+gem "pupu"#, git: "git://github.com/botanicus/pupu.git"
+gem "media-path"#, git: "git://github.com/botanicus/media-path.git" # for asset helpers
+
+# ORM
+gem "dm-core"#, git: "git://github.com/datamapper/dm-core.git"
+gem "dm-timestamps"#, git: "git://github.com/datamapper/dm-more.git"
+gem "dm-aggregates"#, git: "git://github.com/datamapper/dm-more.git" # for count etc
+
+# NOTE: do not use require: nil because if you do so, bundler will require the library anyway
+# Check last section of http://wiki.github.com/merb/merb/howto-using-the-bundler for more informations
+group(:bundle) do
+  gem "thin"#, git: "git://github.com/macournoyer/thin.git" # there seems to be some problems with latest thin
+  #gem "unicorn"#, git: "git://repo.or.cz/unicorn.git"
+  gem "racksh"#, git: "git://github.com/sickill/racksh.git"
+  gem "shotgun"#, git: "git://github.com/rtomayko/shotgun.git"
+end
+
+gem "warden"
+
+gem "simple-logger"#, git: "git://github.com/botanicus/simple-logger.git"
+
+# === Environment-Specific Setup === #
+group(:development, :test) do
+  gem "do_sqlite3"#, git: "git://github.com/datamapper/do.git"
+end
+
+group(:stage, :production) do
+  gem "do_mysql"#, git: "git://github.com/datamapper/do.git"
+end
+
+group(:test, :cucumber) do
+  gem "rspec"#, git: "git://github.com/dchelimsky/rspec.git"
+  gem "rack-test", require: "rack/test"#, git: "git://github.com/brynary/rack-test.git"
+  gem "capybara"#, git: "git://github.com/jnicklas/capybara.git"
+end
+
+group(:cucumber) do
+  gem "cucumber"#, git: "git://github.com/aslakhellesoy/cucumber.git"
+end
