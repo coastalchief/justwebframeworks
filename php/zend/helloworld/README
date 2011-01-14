@@ -1,1 +1,11 @@
- /usr/local/Zend/share/ZendFramework/bin/zf.sh create project helloworld
+create
+# /usr/local/Zend/share/ZendFramework/bin/zf.sh create project helloworld
+
+deploy
+# cd /usr/local/zend/apache2/htdocs
+# cp -r ~/helloworld .
+
+show
+# http://localhost:10088/helloworld/public/index.php
+
+or checkout from github :-)
