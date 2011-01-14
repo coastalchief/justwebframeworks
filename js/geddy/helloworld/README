@@ -1,0 +1,9 @@
+This is using couchdb
+Dont forget to start the db !
+
+# geddy-gen app helloworld
+# geddy-gen db:create
+# geddy-gen resource coast
+# geddy-gen resource seaguard
+
+This example is missing model relationship.
