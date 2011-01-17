@@ -1,13 +1,19 @@
 # helloworld
 
-FIXME: write description
+## preparation
+get https://github.com/technomancy/leiningen/raw/stable/bin/lein
+place in $PATH and make executable
 
-## Usage
-
-FIXME: write
+## create
+lein.sh new helloworld
+lein deps
+lein repl 
+(use 'ring.adapter.jetty)
+(use 'hello-www.core)
+(run-jetty example {:port 8080})
 
 ## License
 
-Copyright (C) 2010 FIXME
+Copyright (C) 2010 coastal
 
 Distributed under the Eclipse Public License, the same as Clojure.
