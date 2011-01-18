@@ -1,0 +1,13 @@
+%% rel generated at {2011,1,18} {14,32,50}
+{release,{"nitrogen","2.0.4"},
+         {erts,"5.7.5"},
+         [{kernel,"2.13.5"},
+          {stdlib,"1.16.5"},
+          {sasl,"2.1.9"},
+          {inets,"5.3"},
+          {crypto,"1.6.4"},
+          {runtime_tools,"1.8.3"},
+          {simple_bridge,"1.1.0"},
+          {nprocreg,"0.1"},
+          {nitrogen,"2.0.4"}]}.
+
