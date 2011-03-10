@@ -1,0 +1,11 @@
+git clone git://github.com/Srirangan/simple-scalatra-archetype.git simple-scalatra-archetype
+cd simple-scalatra-archetype
+mvn install
+
+
+mvn archetype:generate -DarchetypeArtifactId=simple-scalatra-archetype -DarchetypeGroupId=org.scalatra -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=de.coastal -DartifactId=helloworld
+cd helloworld
+mvn install
+mvn jetty:run
+
+localhost:8080/helloworld
