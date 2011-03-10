@@ -1,0 +1,11 @@
+created via:
+
+$ mvn archetype:generate
+and choosed number:	108 remote -> myfaces-archetype-helloworld20 (Archetype to create a new webapp based on MyFaces 2.0)
+and groupId:		de.coastal
+and artifactId:		helloworld
+
+start server via:
+$ mvn clean jetty:run-exploded -PjettyConfig
+
+see your app at: 	localhost:8080/helloworld
