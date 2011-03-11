@@ -1,0 +1,13 @@
+=============================================================================
+Project:   HelloWorld
+Copyright: ©2011 justwebframeworks.com
+=============================================================================
+
+gem install sproutcore
+
+sc-init HelloWorld
+cd hello_world
+sc-server
+
+Open http://localhost:4020/hello_world in your browser
+
