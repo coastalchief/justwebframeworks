@@ -1,0 +1,5 @@
+sudo python setup.py install
+
+django-admin.py startproject helloworld
+
+python manage.py runserver
