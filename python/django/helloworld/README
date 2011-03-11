@@ -1,5 +1,15 @@
-sudo python setup.py install
+install django
+$ sudo python setup.py install
 
-django-admin.py startproject helloworld
+create project
+$ django-admin.py startproject helloworld
 
-python manage.py runserver
+create model
+$ python manage.py startapp HelloWorld
+
+create route in urls.py
+
+start server
+$ python manage.py runserver
+
+http://localhost:8000/helloworld/
