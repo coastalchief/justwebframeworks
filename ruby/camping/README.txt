@@ -1,0 +1,2 @@
+Camping is a web framework which consistently stays at less than 4kB of code. You can probably view the complete source code on a single page.
+Camping encourages short, elegant applications. In this example, we’re going to skip the database and put together a simple home page with a few of your favorite links.

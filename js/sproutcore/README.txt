@@ -1,0 +1,2 @@
+SproutCore is an HTML5 application framework for building responsive, desktop-caliber apps in any modern web browser, without plugins.
+SproutCore works by doing the only thing that can truly eliminate the latency problem: it moves your business logic to the client. SproutCore applications are full-fledged programs, written in JavaScript.

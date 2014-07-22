@@ -1,0 +1,4 @@
+Ruby on Rails, often shortened to Rails or RoR, is an open source web application framework for the Ruby programming language. Ruby on Rails is intended to emphasize Convention over Configuration (CoC), and the rapid development principle of Don’t Repeat Yourself (DRY).
+
+Like many web frameworks, Ruby on Rails uses the Model-View-Controller (MVC) architecture pattern to organize application programming.
+Ruby on Rails includes tools that make common development tasks easier “out of the box”, such as scaffolding that can automatically construct some of the models and views needed for a basic website. Also included are WEBrick, a simple Ruby web server that is distributed with Ruby, and Rake, a build system, distributed as a gem. Together with Ruby on Rails these tools provide a basic development environment.
