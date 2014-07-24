@@ -88,7 +88,9 @@
    "name": "groovy",
    "children": [
     {"name": "grails", "size": 8833},
-    {"name": "groovestry", "size": 1732}
+    {"name": "groovestry", "size": 1732},
+    {"name": "aerie", "size": 8833},
+    {"name": "aribaweb", "size": 8833}
    ]
   },
 {
